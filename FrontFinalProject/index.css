@@ -1,0 +1,6 @@
+/* שינוי צבע החץ בצד הימני */
+.flowbite-dropdown .dropdown-toggle::after {
+    content: "→"; /* אתה יכול לשנות את כיוון החץ אם אתה רוצה */
+    color: white !important; /* צבע החץ */
+    font-size: 20px; /* גודל החץ */
+};

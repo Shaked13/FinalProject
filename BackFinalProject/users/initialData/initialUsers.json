@@ -1,0 +1,68 @@
+[
+    {
+        "name": {
+            "first": "Admin",
+            "last": "Main"
+        },
+        "isBusiness": "true",
+        "isAdmin": "true",
+        "phone": "0545454868",
+        "email": "admin@gmail.com",
+        "password": "Admin12345!",
+        "image": {
+            "url": "https://example.com/profile.jpg",
+            "alt": "admin picture"
+        },
+        "address": {
+            "street": "Lincoln",
+            "city": "New-York",
+            "zip": "465456",
+            "country": "USA",
+            "houseNumber": "111"
+        }
+    },
+    {
+        "name": {
+            "first": "Emily",
+            "last": "Stone"
+        },
+        "isBusiness": "false",
+        "isAdmin": "false",
+        "phone": "0529876543",
+        "email": "emilystone@gmail.com",
+        "password": "User12345!",
+        "image": {
+            "url": "https://example.com/emily.jpg",
+            "alt": "Emily profile picture"
+        },
+        "address": {
+            "street": "Maple",
+            "city": "Toronto",
+            "zip": "1848848",
+            "country": "Canada",
+            "houseNumber": "12"
+        }
+    },
+    {
+        "name": {
+            "first": "Carlos",
+            "last": "Rivera"
+        },
+        "isBusiness": "true",
+        "isAdmin": "false",
+        "phone": "0541237890",
+        "email": "carlosrivera@gmail.com",
+        "password": "User12345!",
+        "image": {
+            "url": "https://example.com/carlos.jpg",
+            "alt": "Carlos business profile"
+        },
+        "address": {
+            "street": "Ocean Drive",
+            "city": "Barcelona",
+            "zip": "4488778",
+            "country": "Spain",
+            "houseNumber": "7"
+        }
+    }
+]
