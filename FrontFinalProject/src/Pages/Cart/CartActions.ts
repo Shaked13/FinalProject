@@ -3,7 +3,7 @@ import { AppDispatch } from "../../Store/Store";
 import { setCart } from "../../Store/CartSlice";
 
 interface CartItem {
-    _id: string; //
+    _id: string;
     shoeId: string;
     size: number;
     quantity: number;
