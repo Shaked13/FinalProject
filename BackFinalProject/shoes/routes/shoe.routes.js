@@ -35,18 +35,18 @@ shoesRouter.get("/:id", async (req, res) => {
     }
 });
 
-/* ----- POST a New Shoe (Authenticated, Business User Only) ----- */
-shoesRouter.post("/", auth, isBusiness, async (req, res) => {
+/* ----- POST a New Shoe (Authenticated, Admin Only) ----- */
+shoesRouter.post("/", auth, isAdmin, async (req, res) => {
     try {
         const shoeData = { ...req.body, userId: req.user._id };
         const shoe = await createNewShoe(shoeData);
-        return res.json(shoe);
+        return res.json({ message: "Added shoe successfully", shoe });
     } catch (err) {
         return res.status(500).json({ message: err.message });
     }
 });
 
-/* ----- PUT Update Shoe (Authenticated, User Only) ----- */
+/* ----- PUT Update Shoe (Authenticated, Admin Only) ----- */
 shoesRouter.put("/:id", auth, isAdmin, async (req, res) => {
     try {
         const shoe = await updateShoe(req.params.id, req.body);
@@ -56,8 +56,8 @@ shoesRouter.put("/:id", auth, isAdmin, async (req, res) => {
     }
 });
 
-/* ----- DELETE Shoe (Authenticated, User Only) ----- */
-shoesRouter.delete("/:id", auth, isUser, async (req, res) => {
+/* ----- DELETE Shoe (Authenticated, Admin Only) ----- */
+shoesRouter.delete("/:id", auth, isAdmin, async (req, res) => {
     try {
         const shoe = await deleteShoe(req.params.id);
         return res.json({ message: "Deleted shoe successfully", shoe });

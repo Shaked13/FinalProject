@@ -108,6 +108,10 @@ POST /checkout: Proceed with checkout and create an order.
 
 Role-based access is enforced through authentication.
 
+
+//Cart Postman Documentation
+https://documenter.getpostman.com/view/40123421/2sB2qUmPrq
+
 --------------------------------------------------------------------------
 
 
@@ -117,14 +121,17 @@ GET /: Fetch all shoes.
 
 GET /:id: Fetch a shoe by ID.
 
-POST /: Add a new shoe (Business user only).
+POST /: Add a new shoe (Admin only).
 
 PUT /:id: Update a shoe (Admin only).
 
-DELETE /:id: Delete a shoe (User only).
+DELETE /:id: Delete a shoe (Admin only).
 
 Implements role-based access control with isBusiness, isAdmin, and isUser middleware for secure access.
 
+
+//Shoes Postman Documentation
+https://documenter.getpostman.com/view/40123421/2sB2qUmPro
 
 --------------------------------------------------------------------------
 
@@ -147,6 +154,8 @@ PATCH /:id: Change a user's auth level (Admin only).
 
 Implements role-based access control and input validation for registration and login.
 
+//Users Postman Documentation
+https://documenter.getpostman.com/view/40123421/2sB2qUmPnY
 
 
 --------------------------------------------------------------------------
