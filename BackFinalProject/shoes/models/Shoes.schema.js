@@ -34,9 +34,6 @@ const shoeSchema = new Schema({
         enum: ["men", "women", "kids"],
         required: true
     },
-    description: {
-        type: String
-    },
     userId: {
         type: Schema.Types.ObjectId,
         ref: "User"
